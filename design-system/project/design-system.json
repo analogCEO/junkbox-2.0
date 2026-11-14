@@ -1,0 +1,131 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-14T10:34:04Z"
+  },
+  "title": "Junkbox 2.0",
+  "namespace": "Junkbox",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Photography",
+    "Audit"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "m",
+      "order": [
+        "junkbox-boxmark.svg",
+        "junkbox-avatar.svg",
+        "junkbox-stamp.svg",
+        "junkbox-wordmark-ink.svg",
+        "junkbox-wordmark-amber.svg",
+        "junkbox-wordmark-cyrillic-ink.svg",
+        "bite-device.svg"
+      ],
+      "files": {
+        "junkbox-boxmark.svg": {
+          "name": "junkbox-boxmark.svg",
+          "blob": "d0d35d0a48b8e71b4fd29cef559de237",
+          "size": 6649,
+          "type": "image/svg+xml"
+        },
+        "junkbox-avatar.svg": {
+          "name": "junkbox-avatar.svg",
+          "blob": "c23b33b35d821f4002abe6bf300602cb",
+          "size": 6861,
+          "type": "image/svg+xml"
+        },
+        "junkbox-stamp.svg": {
+          "name": "junkbox-stamp.svg",
+          "blob": "485cba8a0a0c8c45c9a69c35057bfaef",
+          "size": 6633,
+          "type": "image/svg+xml"
+        },
+        "junkbox-wordmark-ink.svg": {
+          "name": "junkbox-wordmark-ink.svg",
+          "blob": "97a43dc9939e94d22b1e3ac9dd04756f",
+          "size": 6475,
+          "type": "image/svg+xml"
+        },
+        "junkbox-wordmark-amber.svg": {
+          "name": "junkbox-wordmark-amber.svg",
+          "blob": "752ef5a2cf3d9743d6eb0dc7f15a3349",
+          "size": 6475,
+          "type": "image/svg+xml"
+        },
+        "junkbox-wordmark-cyrillic-ink.svg": {
+          "name": "junkbox-wordmark-cyrillic-ink.svg",
+          "blob": "913c09a0ce49a03a696e8a7f55c32c2e",
+          "size": 10784,
+          "type": "image/svg+xml"
+        },
+        "bite-device.svg": {
+          "name": "bite-device.svg",
+          "blob": "b1b5e98ca5e896085686881549e8d7ed",
+          "size": 547,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Photography": {
+      "name": "Photography",
+      "tile": "l",
+      "order": [
+        "wild-west-on-amber.jpg"
+      ],
+      "files": {
+        "wild-west-on-amber.jpg": {
+          "name": "wild-west-on-amber.jpg",
+          "blob": "7287af882e95ecb042e87060a3e7c5c9",
+          "size": 157936,
+          "type": "image/jpeg"
+        }
+      }
+    },
+    "Audit": {
+      "name": "Audit",
+      "tile": "l",
+      "order": [
+        "menu-photo-audit.jpg",
+        "current-logo.jpg",
+        "glovo-cover.jpg"
+      ],
+      "files": {
+        "menu-photo-audit.jpg": {
+          "name": "menu-photo-audit.jpg",
+          "blob": "6d1f0dbb4486bcdd6cb29a02f4541006",
+          "size": 331328,
+          "type": "image/jpeg"
+        },
+        "current-logo.jpg": {
+          "name": "current-logo.jpg",
+          "blob": "65a1ba4c277d485fe667201ae0c8a4fc",
+          "size": 75985,
+          "type": "image/jpeg"
+        },
+        "glovo-cover.jpg": {
+          "name": "glovo-cover.jpg",
+          "blob": "0824b86c85df48b00ab4a5811a477e87",
+          "size": 136939,
+          "type": "image/jpeg"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-11-14T10:34:04Z",
+    "via": "Claude Code",
+    "note": "First version: audit of current Glovo/Instagram presence, new box-and-bite mark, tokens, 8 components, content plan"
+  }
+}
