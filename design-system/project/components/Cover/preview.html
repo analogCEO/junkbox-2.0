@@ -12,13 +12,12 @@
   .art svg { display: block; width: 480px; height: 288px; }
   .amber { fill: var(--amber); }
   .deep { fill: var(--text); }
-  .kraft { fill: var(--kraft); }
-  .pickle { fill: var(--pickle); }
-  .chili { fill: var(--chili); }
-  .ground { fill: var(--surface); }
+  .sunk { fill: var(--surface-sunk); }
+  .rib { fill: var(--surface); }
+  .rib-dark { fill: var(--amber); }
   .words { position: absolute; left: var(--space-8); bottom: var(--space-8); max-width: 440px; }
-  .name { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 80px; line-height: .95; letter-spacing: -.01em; color: var(--text); }
-  .tag { margin: var(--space-3) 0 0 2px; font-size: 14px; line-height: 20px; color: var(--text-muted); }
+  .name { margin: 0; font-family: var(--font-hand); font-weight: 400; font-size: 112px; line-height: .95; letter-spacing: .03em; -webkit-text-stroke: .02em currentColor; color: var(--text); }
+  .tag { margin: var(--space-3) 0 0 4px; font: 500 12px/20px var(--font-sans); letter-spacing: .4em; text-transform: uppercase; color: var(--text-muted); }
 </style>
 </head>
 <body>
@@ -26,29 +25,31 @@
 <div class="art" aria-hidden="true">
 <svg viewBox="0 0 480 288" width="480" height="288">
 <!--
-  blocks      amber 240×240 (the brand, largest) · text-ink 208×160 bleeding off the right (ink in Light; flips to on-ink cream in Dark so it never vanishes into the ink ground) · kraft 112×64 (packaging) · pickle 48×48 once (fresh) · chili only as three heat pills — about 40% of 960×288
-  arrangement one amber slab with satellites stepping right, bottoms on one line space-8 above the edge, space-4 gutters
-  pattern     the bite: three ground-coloured teeth (circle r = space-4, set by the bite formula) cut from the top-right corner of the amber slab and the kraft box, the brand's one device; chili as the heat meter's three pills on the deep block
-  scales      sides in space-4 multiples; gutters space-4; blocks radius-md (12), pickle radius-sm (4), pills rx = half of 8 (radius-pill)
+  blocks      amber 224×256 bleeding off the top (the logo tile, largest) · text-ink 192×176 bleeding off the right (ink in Light, light in Dark so it never sinks into the ground) · surface-sunk 96×64 for relief — about 35% of 960×288
+  arrangement one tall amber slab and a dark slab stepping right, bottoms on one line space-8 above the edge, space-4 gutter
+  pattern     the bin's vertical ribs from the logo: seven ground-coloured slats cut into the amber slab and five amber slats on the dark slab, both at a space-6 pitch
+  scales      sides in space-4 multiples; gutter space-4; pitch space-6 (24); slat width space-2 (8) with rx 4, half its width; blocks radius-none, square like the logo tile
 -->
-<rect class="amber" x="16" y="16" width="240" height="240" rx="12"/>
-<circle class="ground" cx="231.2" cy="13.6" r="16"/>
-<circle class="ground" cx="247.2" cy="24.8" r="16"/>
-<circle class="ground" cx="258.4" cy="40.8" r="16"/>
-<rect class="kraft" x="272" y="16" width="112" height="64" rx="12"/>
-<circle class="ground" cx="371.6" cy="14.5" r="10"/>
-<circle class="ground" cx="381.6" cy="21.5" r="10"/>
-<circle class="ground" cx="388.6" cy="31.5" r="10"/>
-<rect class="pickle" x="400" y="32" width="48" height="48" rx="4"/>
-<rect class="deep" x="272" y="96" width="224" height="160" rx="12"/>
-<rect class="chili" x="296" y="224" width="32" height="8" rx="4"/>
-<rect class="chili" x="336" y="224" width="32" height="8" rx="4"/>
-<rect class="chili" x="376" y="224" width="32" height="8" rx="4"/>
+<rect class="amber" x="16" y="-16" width="224" height="272"/>
+<rect class="rib" x="48" y="96" width="8" height="128" rx="4"/>
+<rect class="rib" x="72" y="96" width="8" height="128" rx="4"/>
+<rect class="rib" x="96" y="96" width="8" height="128" rx="4"/>
+<rect class="rib" x="120" y="96" width="8" height="128" rx="4"/>
+<rect class="rib" x="144" y="96" width="8" height="128" rx="4"/>
+<rect class="rib" x="168" y="96" width="8" height="128" rx="4"/>
+<rect class="rib" x="192" y="96" width="8" height="128" rx="4"/>
+<rect class="sunk" x="256" y="16" width="96" height="64"/>
+<rect class="deep" x="256" y="96" width="240" height="160"/>
+<rect class="rib-dark" x="288" y="128" width="8" height="96" rx="4"/>
+<rect class="rib-dark" x="312" y="128" width="8" height="96" rx="4"/>
+<rect class="rib-dark" x="336" y="128" width="8" height="96" rx="4"/>
+<rect class="rib-dark" x="360" y="128" width="8" height="96" rx="4"/>
+<rect class="rib-dark" x="384" y="128" width="8" height="96" rx="4"/>
 </svg>
 </div>
 <div class="words">
-<h1 class="name">Junkbox<br>2.0</h1>
-<p class="tag">Street food with a fighter's name.</p>
+<h1 class="name">Junkbox 2.0</h1>
+<p class="tag">Cafe &amp; fast food</p>
 </div>
 </div>
 </body>

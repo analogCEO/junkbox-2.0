@@ -1,25 +1,27 @@
 # Logo
 
-The Junkbox mark is a box with a bite taken out of its top-right corner, with JUNK stacked over BOX in Dela Gothic One. It replaces the old hand-lettered logo and its trash-can illustration.
+The Junkbox logo is the hand-drawn trash can overflowing with a burger, fries, cola and a pizza slice, under hand-lettered JUNKBOX and the tagline CAFE & FAST FOOD. The system keeps it exactly as drawn: every file here is traced from the original artwork, not redrawn.
 
 **Files** (all in `assets/Logos`)
 
 | File | Use |
 | --- | --- |
-| `junkbox-boxmark.svg` | Primary. Anywhere the brand signs off: menus, the shop sign, the site header on mobile, packaging stickers. |
-| `junkbox-avatar.svg` | Every round profile picture: Instagram, TikTok, Facebook, Glovo, Wolt. The bite sits on the circle's edge, so it survives the crop. |
-| `junkbox-stamp.svg` | One-colour rubber stamp or screen print on kraft boxes, paper bags and napkins. Ink only. |
-| `junkbox-wordmark-ink.svg` | One-line logo on light grounds: receipts, website header, tape. |
-| `junkbox-wordmark-amber.svg` | One-line logo on ink: story end cards, dark menu boards. |
-| `junkbox-wordmark-cyrillic-ink.svg` | ДЖЪНКБОКС for street signage, flyers and press in Bulgarian. Pair it with the box mark, never instead of it. |
-| `bite-device.svg` | The bite on its own, for crops and stickers. Not a logo. |
+| `junkbox-logo-ink.svg` | Primary. Wordmark, illustration and tagline in ink on white or light grounds. Menus, flyers, the website, documents. |
+| `junkbox-logo-white.svg` | The same in white, for ink grounds and dark photos. |
+| `junkbox-tile-amber.svg` | The amber square from the original file (no tagline). Glovo and Wolt logo slots, post templates, menu covers. |
+| `junkbox-tile-ink.svg` | Amber art on an ink square. Dark menu boards, story end cards. |
+| `junkbox-avatar.svg` | Illustration only, centred on amber so it survives a round crop. Every profile picture. |
+| `junkbox-icon-ink.svg` | Illustration only, transparent. Stickers, stamps, cups, merchandise. |
+| `junkbox-wordmark-ink.svg`, `-white.svg` | JUNKBOX alone, for small or narrow spaces where the illustration would turn to noise. |
+| `junkbox-wordmark-tagline-ink.svg` | JUNKBOX over CAFE & FAST FOOD, no illustration. Tape, receipts, narrow strips. |
+| `junkbox-horizontal-ink.svg` | **Proposed:** illustration left, wordmark and tagline right. Website header, shop fascia, receipts. |
+| `junkbox-original-*.png` | The two files Junkbox supplied, kept for reference. |
 
 **Rules**
 
-- Clear space around the box mark equals the width of one tooth of the bite (1/10 of the box width).
-- Minimum size: box mark 32 px on screen or 12 mm in print; wordmark 80 px or 25 mm wide.
-- Colours: amber box with on-amber letters, the ink stamp, or the amber wordmark on ink. No other colourways, gradients, outlines or drop shadows.
-- Keep the bite at the top right. Don't rotate, mirror or animate it away.
-- Don't put the box mark straight on a photo. On a photo, use the wordmark on a clean amber or ink area.
-- The trash can, the old engraving and the marker-style lettering are retired everywhere, including the shop sign and printed menus.
-- The consumer provides only the ground. Use the SVG as `<img>`; the files are single colours, so pick the file for the ground and don't recolour with CSS.
+- Colours: ink (#231F20) on white, white on ink, ink on amber (#F7AF0B), or amber on ink. Nothing else: no gradients, outlines, shadows or other colours.
+- The illustration is fine engraving. Below about 64 px it fills in, so use the wordmark there, or the avatar at 64 px and up.
+- Minimum sizes: primary 160 px or 40 mm wide (the tagline is unreadable below that); wordmark 80 px or 20 mm; avatar 64 px.
+- Clear space on every side: the height of the J in JUNKBOX.
+- Don't rearrange the food, crop the pizza slice off, or swap in another bin. The Glovo menu currently shows a version without the pizza slice on a rounded orange tile; replace it with `junkbox-tile-amber.svg`.
+- The files are fixed colours: pick the file that matches the ground rather than recolouring with CSS.

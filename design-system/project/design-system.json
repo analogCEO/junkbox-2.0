@@ -19,56 +19,91 @@
       "name": "Logos",
       "tile": "m",
       "order": [
-        "junkbox-boxmark.svg",
+        "junkbox-logo-ink.svg",
+        "junkbox-logo-white.svg",
+        "junkbox-tile-amber.svg",
+        "junkbox-tile-ink.svg",
         "junkbox-avatar.svg",
-        "junkbox-stamp.svg",
+        "junkbox-icon-ink.svg",
+        "junkbox-horizontal-ink.svg",
         "junkbox-wordmark-ink.svg",
-        "junkbox-wordmark-amber.svg",
-        "junkbox-wordmark-cyrillic-ink.svg",
-        "bite-device.svg"
+        "junkbox-wordmark-white.svg",
+        "junkbox-wordmark-tagline-ink.svg",
+        "junkbox-original-transparent.png",
+        "junkbox-original-amber.png"
       ],
       "files": {
-        "junkbox-boxmark.svg": {
-          "name": "junkbox-boxmark.svg",
-          "blob": "d0d35d0a48b8e71b4fd29cef559de237",
-          "size": 6649,
+        "junkbox-logo-ink.svg": {
+          "name": "junkbox-logo-ink.svg",
+          "blob": "c874cbe9d59f4000011b304484bcc3c1",
+          "size": 605056,
+          "type": "image/svg+xml"
+        },
+        "junkbox-logo-white.svg": {
+          "name": "junkbox-logo-white.svg",
+          "blob": "056713302c75ff5062042bff2a97524a",
+          "size": 605056,
+          "type": "image/svg+xml"
+        },
+        "junkbox-tile-amber.svg": {
+          "name": "junkbox-tile-amber.svg",
+          "blob": "1554b2ad062c0f269ac535c331548504",
+          "size": 593375,
+          "type": "image/svg+xml"
+        },
+        "junkbox-tile-ink.svg": {
+          "name": "junkbox-tile-ink.svg",
+          "blob": "cfbac49e0eed803e618e34cf26acbe3e",
+          "size": 593375,
           "type": "image/svg+xml"
         },
         "junkbox-avatar.svg": {
           "name": "junkbox-avatar.svg",
-          "blob": "c23b33b35d821f4002abe6bf300602cb",
-          "size": 6861,
+          "blob": "ac6db504e715c494f6de4f3019e11af6",
+          "size": 580993,
           "type": "image/svg+xml"
         },
-        "junkbox-stamp.svg": {
-          "name": "junkbox-stamp.svg",
-          "blob": "485cba8a0a0c8c45c9a69c35057bfaef",
-          "size": 6633,
+        "junkbox-icon-ink.svg": {
+          "name": "junkbox-icon-ink.svg",
+          "blob": "cdad2e0f0d3f4610344a07a9ebfd746a",
+          "size": 580888,
+          "type": "image/svg+xml"
+        },
+        "junkbox-horizontal-ink.svg": {
+          "name": "junkbox-horizontal-ink.svg",
+          "blob": "d9e572f22b70fff25bcef207363e904b",
+          "size": 605218,
           "type": "image/svg+xml"
         },
         "junkbox-wordmark-ink.svg": {
           "name": "junkbox-wordmark-ink.svg",
-          "blob": "97a43dc9939e94d22b1e3ac9dd04756f",
-          "size": 6475,
+          "blob": "150b7c94132d63b0c92e0b240cf983a7",
+          "size": 12563,
           "type": "image/svg+xml"
         },
-        "junkbox-wordmark-amber.svg": {
-          "name": "junkbox-wordmark-amber.svg",
-          "blob": "752ef5a2cf3d9743d6eb0dc7f15a3349",
-          "size": 6475,
+        "junkbox-wordmark-white.svg": {
+          "name": "junkbox-wordmark-white.svg",
+          "blob": "45efd8d7308db1e041bd3ae94b46774b",
+          "size": 12563,
           "type": "image/svg+xml"
         },
-        "junkbox-wordmark-cyrillic-ink.svg": {
-          "name": "junkbox-wordmark-cyrillic-ink.svg",
-          "blob": "913c09a0ce49a03a696e8a7f55c32c2e",
-          "size": 10784,
+        "junkbox-wordmark-tagline-ink.svg": {
+          "name": "junkbox-wordmark-tagline-ink.svg",
+          "blob": "0fc49e85f1676b153c60b2bea62987a3",
+          "size": 24404,
           "type": "image/svg+xml"
         },
-        "bite-device.svg": {
-          "name": "bite-device.svg",
-          "blob": "b1b5e98ca5e896085686881549e8d7ed",
-          "size": 547,
-          "type": "image/svg+xml"
+        "junkbox-original-transparent.png": {
+          "name": "junkbox-original-transparent.png",
+          "blob": "ab6337dcf72e25ae28f1ac4f6a8b853e",
+          "size": 154926,
+          "type": "image/png"
+        },
+        "junkbox-original-amber.png": {
+          "name": "junkbox-original-amber.png",
+          "blob": "0a8971e1007523b088da1bea001cc42f",
+          "size": 163086,
+          "type": "image/png"
         }
       }
     },
@@ -124,8 +159,8 @@
   },
   "lastChange": {
     "by": "Claude",
-    "at": "2026-11-14T10:34:04Z",
+    "at": "2026-11-14T10:43:42Z",
     "via": "Claude Code",
-    "note": "First version: audit of current Glovo/Instagram presence, new box-and-bite mark, tokens, 8 components, content plan"
+    "note": "Rebuilt around Junkbox's own logo: traced vector lockups, palette from the logo file, Neucha + Montserrat, components restyled"
   }
 }

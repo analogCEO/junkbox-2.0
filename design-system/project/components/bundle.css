@@ -1,131 +1,98 @@
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Martian+Mono:wght@400;500;600&family=Onest:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Neucha&display=swap");
 
 /* Junkbox 2.0 components. Every colour, size and radius comes from tokens.css. */
 
 body { background: var(--surface); color: var(--text); font-family: var(--font-sans); margin: 0; }
 
-/* ---------- The bite: three overlapping circles cut from the top-right corner ---------- */
-/* Use on any rectangle: add .jb-bite and set --bite (the radius of one tooth). */
-.jb-bite {
-  --bite: 14px;
-  --jb-t1: radial-gradient(circle var(--bite) at calc(100% - 1.55 * var(--bite)) calc(-0.15 * var(--bite)), #0000 98%, #000);
-  --jb-t2: radial-gradient(circle var(--bite) at calc(100% - 0.55 * var(--bite)) calc(0.55 * var(--bite)), #0000 98%, #000);
-  --jb-t3: radial-gradient(circle var(--bite) at calc(100% + 0.15 * var(--bite)) calc(1.55 * var(--bite)), #0000 98%, #000);
-  -webkit-mask: var(--jb-t1), var(--jb-t2), var(--jb-t3);
-  -webkit-mask-composite: source-in, source-in;
-  mask: var(--jb-t1), var(--jb-t2), var(--jb-t3);
-  mask-composite: intersect;
-}
+/* Hand-lettered names: Neucha in caps, set a little heavier to sit beside the logo lettering. */
+.jb-hand { font-family: var(--font-hand); font-weight: 400; text-transform: uppercase; letter-spacing: .04em; -webkit-text-stroke: .025em currentColor; }
+/* The logo's tagline voice: wide-tracked Montserrat caps. */
+.jb-tracked { font: 500 12px/16px var(--font-sans); letter-spacing: .4em; text-transform: uppercase; }
 
 /* ---------- Button ---------- */
 .jb-btn {
-  display: inline-flex; align-items: center; gap: var(--space-2);
+  display: inline-flex; align-items: center; gap: var(--space-3);
   min-height: 48px; padding: 0 var(--space-6);
-  border: 2px solid var(--on-amber); border-radius: var(--radius-md);
+  border: 2px solid var(--on-amber); border-radius: var(--radius-sm);
   background: var(--amber); color: var(--on-amber);
-  font: 700 15px/1 var(--font-sans); letter-spacing: .04em; text-transform: uppercase;
-  box-shadow: var(--shadow-sticker); cursor: pointer;
-  transition: transform .08s ease, box-shadow .08s ease, background .08s ease;
+  font: 600 14px/1 var(--font-sans); letter-spacing: .18em; text-transform: uppercase; cursor: pointer;
 }
 .jb-btn:hover { background: var(--amber-press); }
-.jb-btn:active { transform: translate(4px, 4px); box-shadow: none; }
-.jb-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
-.jb-btn .jb-btn-price { font: 600 14px/1 var(--font-mono); letter-spacing: 0; text-transform: none; }
+.jb-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.jb-btn .jb-btn-price { letter-spacing: 0; text-transform: none; }
 .jb-btn--ink { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
 .jb-btn--ink:hover { background: var(--ink); color: var(--amber); }
-.jb-btn--ghost { background: transparent; color: var(--text); border-color: var(--text-muted); box-shadow: none; }
-.jb-btn--ghost:hover { background: var(--surface-sunk); }
-.jb-btn[disabled] { opacity: .45; cursor: not-allowed; box-shadow: none; }
-@media (prefers-reduced-motion: reduce) { .jb-btn { transition: none; } .jb-btn:active { transform: none; } }
+.jb-btn--outline { background: transparent; color: var(--text); border-color: var(--text); }
+.jb-btn--outline:hover { background: var(--surface-sunk); }
+.jb-btn[disabled] { opacity: .45; cursor: not-allowed; }
 
 /* ---------- Tag ---------- */
 .jb-tag {
-  display: inline-flex; align-items: center; gap: var(--space-1);
-  height: 24px; padding: 0 var(--space-2); border-radius: var(--radius-sm);
-  font: 700 12px/1 var(--font-sans); letter-spacing: .06em; text-transform: uppercase;
-  background: var(--amber); color: var(--on-amber); white-space: nowrap;
+  display: inline-flex; align-items: center; height: 24px; padding: 0 var(--space-2);
+  border: 1.5px solid var(--text); border-radius: var(--radius-sm); color: var(--text); background: transparent;
+  font: 600 11px/1 var(--font-sans); letter-spacing: .16em; text-transform: uppercase; white-space: nowrap;
 }
-.jb-tag--combo { background: var(--ink); color: var(--amber); }
-.jb-tag--veg { background: var(--pickle); color: var(--on-pickle); }
-.jb-tag--hot { background: var(--chili); color: var(--on-chili); }
-.jb-tag--weight { background: transparent; color: var(--text-muted); border: 1px solid var(--text-muted); font: 500 11px/1 var(--font-mono); letter-spacing: .02em; text-transform: none; }
-
-/* ---------- Heat meter: three segments, filled to the item's heat ---------- */
-.jb-heat { display: inline-flex; align-items: center; gap: var(--space-2); font: 500 12px/1 var(--font-mono); color: var(--text-muted); }
-.jb-heat-bar { display: inline-flex; gap: 3px; }
-.jb-heat-bar i { width: 14px; height: 8px; border-radius: var(--radius-pill); border: 1.5px solid var(--chili); }
-.jb-heat-bar i.on { background: var(--chili); }
+.jb-tag--new { background: var(--amber); color: var(--on-amber); border-color: var(--amber); }
+.jb-tag--combo { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.jb-tag--hot { color: var(--hot); border-color: var(--hot); }
+.jb-tag--weight { border-color: var(--line); color: var(--text-muted); letter-spacing: .04em; text-transform: none; font-weight: 500; }
 
 /* ---------- Price tag ---------- */
 .jb-price {
-  --bite: 9px;
-  display: inline-flex; align-items: baseline; gap: .3em;
-  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  display: inline-flex; align-items: baseline; padding: var(--space-1) var(--space-3);
   background: var(--tag); color: var(--on-tag); border-radius: var(--radius-sm);
-  font: 600 20px/24px var(--font-mono); white-space: nowrap;
+  font: 600 18px/24px var(--font-sans); font-variant-numeric: tabular-nums; white-space: nowrap;
 }
-.jb-price small { font-size: 13px; font-weight: 500; }
-.jb-price--ink { background: var(--ink); color: var(--on-ink); }
 .jb-price--amber { background: var(--amber); color: var(--on-amber); }
-.jb-price--amber small { color: var(--on-amber); }
-.jb-price-was { font: 500 13px/1 var(--font-mono); color: var(--text-muted); text-decoration: line-through; margin-left: var(--space-2); }
+.jb-price--ink { background: var(--ink); color: var(--on-ink); }
+.jb-price-was { font: 500 13px/1 var(--font-sans); color: var(--text-muted); text-decoration: line-through; margin-left: var(--space-2); }
 
 /* ---------- Menu card ---------- */
 .jb-card {
-  display: grid; grid-template-rows: auto 1fr; overflow: hidden;
-  background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-md);
-  color: var(--text); max-width: 320px; min-width: 0;
+  display: grid; grid-template-rows: auto 1fr; overflow: hidden; max-width: 320px; min-width: 0;
+  background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--text);
 }
-.jb-card-photo { --bite: 22px; position: relative; aspect-ratio: 1; background: var(--amber); }
-.jb-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.jb-card-photo { position: relative; aspect-ratio: 1; background: var(--amber); display: grid; place-items: center; }
+.jb-card-photo > img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .jb-card-photo .jb-tag { position: absolute; left: var(--space-3); top: var(--space-3); }
+.jb-card-photo > img.jb-placeholder { width: 46%; height: auto; object-fit: contain; }
 .jb-card-body { display: grid; gap: var(--space-3); padding: var(--space-4); align-content: start; min-width: 0; }
-.jb-card-name { margin: 0; font: 400 22px/1.15 var(--font-display); text-transform: uppercase; text-wrap: balance; }
-.jb-card-name span { display: block; font: 600 13px/16px var(--font-sans); letter-spacing: .06em; color: var(--text-muted); text-transform: uppercase; margin-top: var(--space-1); }
+.jb-card-name { margin: 0; font-size: 28px; line-height: 1.05; text-wrap: balance; }
+.jb-card-cat { margin: 0; font: 500 10px/14px var(--font-sans); letter-spacing: .3em; text-transform: uppercase; color: var(--text-muted); }
 .jb-card-desc { margin: 0; font: 400 14px/20px var(--font-sans); color: var(--text-muted); }
-.jb-card-meta { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
-.jb-card-foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-1); }
+.jb-card-meta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.jb-card-foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
 .jb-card-add {
-  width: 44px; height: 44px; border-radius: var(--radius-md); border: 2px solid var(--on-amber);
-  background: var(--amber); color: var(--on-amber); font: 400 24px/1 var(--font-display); cursor: pointer;
+  width: 44px; height: 44px; border-radius: var(--radius-sm); border: 2px solid var(--on-amber);
+  background: var(--amber); color: var(--on-amber); font: 600 22px/1 var(--font-sans); cursor: pointer;
 }
-.jb-card-add:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.jb-card-add:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 
-/* ---------- Social post templates (designed at 1080 wide, shown scaled) ---------- */
-.jb-post {
-  position: relative; width: 300px; aspect-ratio: 4 / 5; overflow: hidden; flex: none;
-  background: var(--amber); color: var(--on-amber); border-radius: var(--radius-sm);
-  font-family: var(--font-sans);
-}
-.jb-post img.jb-post-photo { position: absolute; inset: 14% -6% auto -6%; width: 112%; }
-.jb-post-head { position: absolute; left: 18px; right: 18px; top: 16px; display: flex; justify-content: space-between; align-items: flex-start; }
-.jb-post-head img { height: 34px; }
-.jb-post-title { position: absolute; left: 18px; right: 18px; bottom: 16px; margin: 0; font: 400 40px/0.95 var(--font-display); text-transform: uppercase; letter-spacing: -.01em; }
-.jb-post-sub { display: block; font: 500 10px/14px var(--font-mono); letter-spacing: .02em; text-transform: none; margin-top: 8px; }
+/* ---------- Social posts (1080 x 1350, previewed at 300 px wide) ---------- */
+.jb-post { position: relative; width: 288px; aspect-ratio: 4 / 5; overflow: hidden; flex: none; background: var(--amber); color: var(--on-amber); }
+.jb-post-photo { position: absolute; left: 6%; width: 88%; top: 10%; }
+.jb-post-logo { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); height: 16px; }
+.jb-post-foot { position: absolute; left: 18px; right: 18px; bottom: 16px; text-align: center; display: grid; gap: 6px; justify-items: center; }
+.jb-post-title { margin: 0; font-size: 44px; line-height: .95; }
+.jb-post-sub { font: 500 8px/12px var(--font-sans); letter-spacing: .4em; text-transform: uppercase; }
 .jb-post--ink { background: var(--ink); color: var(--on-ink); }
-.jb-post--ink .jb-post-title em { font-style: normal; color: var(--amber); }
-.jb-post-stats { position: absolute; left: 18px; right: 18px; top: 72px; display: grid; gap: 10px; }
-.jb-post-stat { display: grid; grid-template-columns: 70px 1fr 26px; align-items: center; gap: 8px; font: 500 9px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .04em; }
-.jb-post-stat b { height: 8px; background: #FFF4E033; border-radius: var(--radius-pill); position: relative; overflow: hidden; }
-.jb-post-stat b::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--v); background: var(--amber); border-radius: var(--radius-pill); }
+.jb-post--ink .jb-post-art { position: absolute; left: 50%; top: 40px; width: 62%; transform: translateX(-50%); }
+.jb-post--ink .jb-post-title span { color: var(--amber); }
+.jb-post--white { background: var(--on-ink); color: var(--ink); }
 
-/* ---------- Bag seal sticker (printed 70 x 100 mm) ---------- */
+/* ---------- Bag seal (printed 70 x 100 mm) ---------- */
 .jb-seal {
-  --bite: 16px;
-  width: 210px; padding: var(--space-4); box-sizing: border-box;
-  background: var(--amber); color: var(--on-amber); border-radius: var(--radius-sm);
-  display: grid; gap: var(--space-3); box-shadow: var(--shadow-sticker);
+  width: 210px; padding: var(--space-4); box-sizing: border-box; display: grid; gap: var(--space-3); justify-items: center; text-align: center;
+  background: var(--amber); color: var(--on-amber); border: 2px solid var(--on-amber);
 }
-.jb-seal img { width: 120px; }
-.jb-seal-no { font: 400 30px/1 var(--font-display); }
-.jb-seal-rows { margin: 0; padding: var(--space-3) 0 0; list-style: none; border-top: 2px dashed var(--on-amber); display: grid; gap: var(--space-1); font: 500 11px/15px var(--font-mono); }
+.jb-seal img { width: 150px; }
+.jb-seal-no { font-size: 40px; line-height: 1; }
+.jb-seal-rows { margin: 0; padding: var(--space-3) 0 0; width: 100%; list-style: none; border-top: 1.5px dashed var(--on-amber); display: grid; gap: var(--space-1); font: 500 11px/15px var(--font-sans); text-align: left; }
 .jb-seal-rows li { display: flex; justify-content: space-between; gap: var(--space-2); }
-.jb-seal-line { font: 700 12px/16px var(--font-sans); letter-spacing: .04em; text-transform: uppercase; }
 
-/* ---------- Logo grounds (Logo preview) ---------- */
-.jb-ground { display: flex; align-items: center; justify-content: center; padding: var(--space-6); border-radius: var(--radius-md); min-width: 0; }
-.jb-ground--paper { background: var(--on-ink); border: 1px solid var(--line); }
+/* ---------- Logo grounds ---------- */
+.jb-ground { display: flex; align-items: center; justify-content: center; padding: var(--space-4); min-width: 0; }
+.jb-ground--white { background: var(--on-ink); border: 1px solid var(--line); }
 .jb-ground--ink { background: var(--ink); }
 .jb-ground--amber { background: var(--amber); }
-.jb-ground--kraft { background: var(--kraft); }
-.jb-caption { font: 500 11px/16px var(--font-mono); color: var(--text-muted); }
+.jb-caption { font: 500 11px/16px var(--font-sans); color: var(--text-muted); }

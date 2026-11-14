@@ -1,87 +1,80 @@
-Junkbox is a street-food counter at Пиротска 61, Sofia. It sells brioche burgers, tortillas, quesadillas and fried boxes, mostly through Glovo, under menu names borrowed from action films and video games: Samurai Jack, Wild West, Hot Bandolero, Double Cheese-murder, Quadra Kill. This system keeps the two things the brand already owns, the amber backdrop and that naming voice, and replaces everything else: the trash-can logo, the stock photos and the mixed-up copy.
+Junkbox is a cafe and fast-food counter at Пиротска 61, Sofia: brioche burgers, tortillas, quesadillas, fried boxes and breakfast, sold over the counter and through Glovo. The identity is the logo Junkbox already has: a hand-drawn trash can overflowing with a burger, fries, cola and pizza, hand-lettered JUNKBOX, the tagline CAFE & FAST FOOD, in ink on white or on amber. This system keeps that logo as drawn and makes everything around it consistent.
 
-## The brand in one line
+## The look in one line
 
-**Street food with a fighter's name.** Every item is a character, every combo is a move, and everything comes in a box with a bite already taken out of it.
+**Ink drawing on amber.** Black hand-drawn line work, hand lettering and wide-tracked caps, on the logo's amber or on white. Nothing glossy, no gradients, no stock photos.
 
 ## Name
 
-- In running text: **Junkbox**, one word, capital J only. Not JunkBox, Junk Box or JUNKBOX. Glovo, Instagram and the logo use all three today.
-- In Bulgarian running text: **Джънкбокс**.
-- Handle: **@junkboxbulgaria** on every platform.
-- The logo is always uppercase; that is the logo, not the spelling.
+- In running text: **Junkbox**, capital J only. The logo is uppercase; text isn't. Glovo currently says "JunkBox" and Instagram "JunkBoxBulgaria": change both.
+- In Bulgarian text: **Джънкбокс**.
+- Tagline: **CAFE & FAST FOOD**, always in English and always in caps, as in the logo.
+- Handle: **@junkboxbulgaria** everywhere.
 
 ## Logo
 
-Use the files in `assets/Logos`; the Logo component lists which one goes where. The primary mark is `junkbox-boxmark.svg`: an `amber` box with a bite out of its top-right corner, JUNK over BOX in `on-amber`. Round profile pictures use `junkbox-avatar.svg`. Kraft packaging uses the one-ink `junkbox-stamp.svg`. Never redraw the mark; the letters are outlined from Dela Gothic One.
+The Logo component lists every file in `assets/Logos` and where it goes. In short:
 
-Retire the old logo everywhere: the hand-lettered JUNKBOX on an orange rounded tile with an engraved trash can overflowing with food (see `assets/Audit/current-logo.jpg`).
+- `junkbox-logo-ink.svg` is the primary logo: ink on white or light grounds, with `junkbox-logo-white.svg` for dark grounds.
+- `junkbox-tile-amber.svg` is the logo as people know it from the amber file. Use it as the logo on Glovo and Wolt, on post templates and on menu covers.
+- `junkbox-avatar.svg` is every profile picture.
+- Under 64 px the drawing fills in, so use `junkbox-wordmark-ink.svg` there.
+- Only four colourways: ink on white, white on ink, ink on amber, amber on ink.
 
 ## Colour
 
-- `amber` is the brand. Use it big: photo backdrops, the logo box, posts, stickers, the order button. Text on amber is always `on-amber`.
-- `ink` is the second brand colour: story backgrounds, price tags, the stamp, dark menu boards. Text on ink is `on-ink`, with one word in `amber` at most.
-- Web and print pages sit on `surface`, with cards on `surface-raised` and bands on `surface-sunk`. Text is `text`, secondary text `text-muted`.
-- `kraft` is the packaging colour. It is never a screen background.
-- `pickle` means veggie or fresh, nothing else. `chili` means heat, nothing else. Neither is ever used for prices, sales or errors.
-- Never set `amber` as text on a light ground (1.8:1). Never put white on amber.
-- Focus is a 3px solid `focus` ring with a 2px offset.
+- `amber` (#F7AF0B, from the logo file) is the brand colour. Use it for the logo tile, photo backdrops, posts, the order button and stickers. Text and line art on amber are `on-amber`.
+- `ink` (#231F20, the logo's black) is for line art, dark posts and menu boards. Text on ink is `on-ink`; amber can pick out one word.
+- Web pages and printed menus are white: `surface`, with cards on `surface-raised` and bands on `surface-sunk`. Text is `text`; ingredients and captions are `text-muted`.
+- `hot` is used only for the ЛЮТО tag.
+- Never set amber text on white (1.9:1).
+- Today there are three ambers in use: the logo file (#F7AF0B), the photo backdrop (#F9B20A) and the Glovo logo tile (#F09C08). Use #F7AF0B for all of them.
 
 ## Type
 
-All three faces cover Cyrillic. Bulgarian comes first, so test every layout in Bulgarian before English.
+Both faces cover Cyrillic. Write in Bulgarian first and check every layout in Bulgarian.
 
-- **Dela Gothic One** (`display`) is for item names and headlines only, in caps. One display line per post, poster or screen. Styles: `display-xl`, `display-l`, `display-m`, `title`.
-- **Onest** (`sans`) is for everything people read: descriptions, captions, buttons. Styles: `body-l`, `body`, `body-s`, `label`.
-- **Martian Mono** (`mono`) is the kitchen ticket. Use it for prices, grams, order numbers and times. Styles: `price`, `ticket`.
+- **Hand lettering:** item names and headlines in **Neucha**, caps, with the `jb-hand` class. It's the closest Google font to the logo's lettering and a stand-in until the logo's own font is confirmed. Styles: `display-xl`, `display-l`, `display-m`, `title`. One hand-lettered line per post or screen.
+- **Montserrat** for everything else:
+  - `tagline`: wide-tracked caps for category lines and labels, echoing CAFE & FAST FOOD.
+  - `body-l`, `body` and `body-s` for reading.
+  - `button` for buttons and tags.
+  - `price` for prices.
 
 ## Writing
 
-**Bulgarian first, English names.** Item names stay in their English hero form; the category that follows is Bulgarian.
+Bulgarian first; item names keep their English names, and the category after them is Bulgarian.
 
 | Today on Glovo | Junkbox 2.0 |
 | --- | --- |
 | Wild West Бургер + Fries | **Wild West**, телешки бургер + картофки |
 | Hot Bandolero Бургер (Нов) + Fries | **Hot Bandolero**, телешки бургер + картофки · НОВО |
 | Philly Cheesesteak Tortilla  (NEW) + Fries | **Philly Cheesesteak**, тортила + картофки · НОВО |
-| Самурай Бургер / Samurai Jack Меню | **Samurai**, пилешки бургер / **Samurai Jack**, комбо за двама |
+| Кесадия Loco + Картофки | **Кесадия Loco** + картофки |
 
-**Description format.** Ingredients as one sentence in serving order, commas only, no slashes, then the weight: "Бриош питка, хрупкави пилешки стрипсове, лучени кръгчета, гауда, домашни кисели краставички, домат, айсберг, бургер сос. 380 г". Name the side separately, never inside the slashes.
-
-**Spelling to fix in every listing:** Ангъс (not Ангьс), чедър (not чедьр), кръгчета (not крьгчета), бриош (not брош), бургер сос (not буого coc), гарнитура (not гарнитира), домашен (not домащен). Coca-Cola is listed as "(500мл)" with the description "(330мл)": state the real size once.
-
-**Names are the voice.** Keep naming new items and combos as characters and moves: films, westerns, fighting games, MOBA kill streaks. One name per item; no puns in descriptions. Descriptions stay plain and appetising.
-
-**Tone.** Short, confident, a bit of swagger. Speak to the eater with "ти" on social and "вие" on official signs and receipts. No emoji in names or on packaging. On social, use one at most and never as a bullet.
-
-**Prices:** "10,99 €". Comma decimal, a space, then the € sign.
+- **Descriptions:** ingredients in one sentence, commas only, no slashes, weight at the end: "Бриош питка, хрупкави пилешки стрипсове, лучени кръгчета, гауда, домашни кисели краставички, домат, айсберг, бургер сос. 380 г".
+- **Fix these spellings in every listing:** Ангъс (not Ангьс), чедър (not чедьр), кръгчета (not крьгчета), бриош (not брош), бургер сос (not буого coc), гарнитура (not гарнитира), домашен (not домащен). Coca-Cola is "(500мл)" in the name and "(330мл)" in the description; state the real size once.
+- **"New" is НОВО**, as a tag, never in the name.
+- **Prices:** "10,99 €".
+- **Tone:** short and friendly, with a wink, the way the logo is. Use "ти" on social and "вие" on signs and receipts.
 
 ## Photography
 
-The amber sweep is the house style; 14 of the 20 Glovo photos already use it. Make it a rule.
+Most Glovo photos already put the food on amber. Make it the rule.
 
-- Every menu item is photographed in-house, on a seamless backdrop matched to `amber`. One photo per item; two items never share a photo.
-- Camera at about 25° above the plate, three-quarter view, the cut side facing camera for tortillas and quesadillas. Soft shadow straight down. No props on the main shot.
-- Shoot the real build that matches the description. Stay Strong shows slaw today, but the recipe lists айсберг and домат.
-- Sides and boxes are shot in their kraft packaging.
-- No stock photography, no watermarks, no composited flames, smoke or flying leaves. The current photo for the item named "Junkbox" is a stock image with a Dreamstime watermark showing wings and coleslaw that aren't on the menu. Replace it first.
-- Crop photos square for menus and listings; add the bite to the corner with the `jb-bite` class.
+- Shoot every item in-house on a seamless backdrop matched to `amber`, one photo per item, the real build that matches the description.
+- Use a three-quarter view from about 25° above, a soft shadow straight down, and no props.
+- Shoot sides and boxes in their packaging.
+- No stock photos, watermarks, or composited flames, smoke or leaves. The current photo for the item called "Junkbox" is a stock image with a Dreamstime watermark: replace it first.
+- Until an item has its photo, show the logo illustration on amber (see MenuCard).
 
-## The bite
+## Shape and space
 
-The bite is the brand's graphic device: three overlapping circles cut from a top-right corner. It goes on the logo, photo crops, price tags, the bag seal and stickers. Always top-right, and only one per object. In CSS, add `jb-bite` and set `--bite` to the tooth radius (about 7% of the shorter side).
-
-## Shape, space and depth
-
-- Corners are square-shouldered: `radius-md` on cards, photos and buttons, `radius-sm` on tags and price tags, `radius-pill` only for heat segments and round stickers.
+- Square corners: `radius-none` on logo tiles, posts and photos; `radius-sm` on buttons, tags and cards. Round only for stickers and avatar crops.
 - Spacing runs on 4px: `space-1` to `space-16`.
-- There is one shadow, `shadow-sticker`: hard, offset, no blur. Use it on stickers, price tags and the order button. Cards get `line` hairlines instead.
-- Motion: buttons press down (shadow collapses) on tap; nothing else animates. Respect reduced motion.
-
-## Iconography
-
-The source has no icon set, and this system doesn't add one. Heat is the HeatMeter, labels are Tags, and the bite is the only ornament. If a platform demands icons, use simple solid shapes in `ink` or `on-amber`; no outline icon sets and no emoji.
+- No shadows. Separate things with `line` hairlines or a 2px ink border.
+- No icon set; the logo illustration is the only drawing. If a platform needs icons, keep them solid and in ink.
 
 ## Packaging
 
-Two inks: the `junkbox-stamp.svg` stamp on kraft boxes, bags and fry cups, plus the amber BagSeal sticker closing each delivery bag. Napkins and tape use the ink wordmark.
+Two inks. Print or stamp the ink illustration (`junkbox-icon-ink.svg`) on kraft bags, boxes and cups, and close each delivery bag with the amber BagSeal sticker.

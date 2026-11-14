@@ -1,11 +1,13 @@
 # Logos
 
-The Junkbox 2.0 marks, outlined from Dela Gothic One. All are single-colour SVGs with fixed fills; pick the file for the ground and don't recolour.
+Junkbox's own logo, traced to vector from the two PNGs Junkbox supplied (`junkbox-original-transparent.png`, `junkbox-original-amber.png`). Each SVG has fixed fills; pick the file that matches the ground and never recolour.
 
-- `junkbox-boxmark.svg`: primary. `amber` box (#F9B20A), letters in `on-amber` (#16120E). Light, kraft or ink grounds.
-- `junkbox-avatar.svg`: circle version for profile pictures. Same inks.
-- `junkbox-stamp.svg`: one ink, `ink` (#16120E), letters knocked out. Kraft, white or amber grounds.
-- `junkbox-wordmark-ink.svg`: one line in `ink`. Light, amber or kraft grounds.
-- `junkbox-wordmark-amber.svg`: one line in `amber`. Ink grounds only.
-- `junkbox-wordmark-cyrillic-ink.svg`: ДЖЪНКБОКС in `ink`, for Bulgarian signage next to the box mark.
-- `bite-device.svg`: the bite cut from an `ink` square. A graphic device, not a logo.
+- `junkbox-logo-ink.svg`: primary, ink (#231F20) on transparent. White and light grounds.
+- `junkbox-logo-white.svg`: the same in white. Ink grounds and dark photos.
+- `junkbox-tile-amber.svg`: ink art on an amber (#F7AF0B) square, no tagline. The original amber file as a vector.
+- `junkbox-tile-ink.svg`: amber art on an ink square.
+- `junkbox-avatar.svg`: illustration only, ink on an amber square, sized for a round crop.
+- `junkbox-icon-ink.svg`: illustration only, ink on transparent. Stamps and stickers.
+- `junkbox-wordmark-ink.svg`, `junkbox-wordmark-white.svg`: JUNKBOX alone.
+- `junkbox-wordmark-tagline-ink.svg`: JUNKBOX over CAFE & FAST FOOD, ink.
+- `junkbox-horizontal-ink.svg`: proposed horizontal lockup, ink.
