@@ -18,3 +18,11 @@ Paired with Junkbox's own hand-lettered JUNKBOX and CAFE & FAST FOOD (traced fro
 | `junkbag-avatar.svg` | Profile picture: mark centred on amber, safe for round crops. |
 
 Rebuild: `python3 tools/bag_mark.py logo-concepts/junk-bag`
+
+## Rounded version (`junkbag-round-*`)
+
+Softer shapes and a white inner contour: a rounder bag with a round bottom, rounded tie ears and knot, rounded cheese drips, and a white line running just inside the edge of the bag and the ears. The burger inside is drawn in white lines (seeds, lettuce, the line above the bottom bun, creases, shine) with amber cheese. On ink, the colours swap: amber bag, ink lines, white cheese.
+
+Files: `junkbag-round-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-round-board.png`.
+
+Rebuild: `python3 tools/bag_mark_round.py logo-concepts/junk-bag`
