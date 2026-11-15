@@ -49,3 +49,11 @@ The minimal burger, **unchanged** (seeds, lettuce, cheese drips, bottom line, wh
 Files: `junkbag-final-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-final-board.png`.
 
 Rebuild: `python3 tools/bag_mark_final.py logo-concepts/junk-bag`
+
+## v5: classic bin bag with the burger inside (`junkbag-v5-*`)
+
+The bag no longer follows the burger. It has its own traditional bin-bag silhouette: a wide, slightly sagging bottom, shoulders tapering to a pinched neck, white tie band and gather creases, a knot, and two big pointed tie ends swept up and out. The minimal burger (unchanged, with its white contour, seeds, lettuce, cheese drips and bottom line) sits at 60% size in the lower half of the bag, with generous black padding around it.
+
+Files: `junkbag-v5-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v5-board.png`.
+
+Rebuild: `python3 tools/bag_mark_v5.py logo-concepts/junk-bag`
