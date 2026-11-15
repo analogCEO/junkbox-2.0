@@ -37,3 +37,15 @@ The rounded version stripped to what carries the idea, with everything thicker:
 Files: `junkbag-min-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-min-board.png`.
 
 Rebuild: `python3 tools/bag_mark_min.py logo-concepts/junk-bag`
+
+## Final direction (`junkbag-final-*`)
+
+The minimal burger, **unchanged** (seeds, lettuce, cheese drips, bottom line, white inner contour), with a top that reads clearly as a tied bin bag rather than round ears or a propeller cap:
+
+- a taller **pinched neck** rising from the bag's shoulders, with three white **creases** where the plastic gathers;
+- the white **tie band** across the neck and a small knot;
+- two **crumpled plastic flaps** with cut, notched ends, asymmetric: the left one tall and upright, the right one shorter and swung out sideways.
+
+Files: `junkbag-final-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-final-board.png`.
+
+Rebuild: `python3 tools/bag_mark_final.py logo-concepts/junk-bag`
