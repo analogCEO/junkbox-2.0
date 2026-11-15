@@ -76,3 +76,11 @@ Rebuild: `python3 tools/bag_mark_v6.py logo-concepts/junk-bag`
 Files: `junkbag-v7-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v7-board.png`.
 
 Rebuild: `python3 tools/bag_mark_v7.py logo-concepts/junk-bag`
+
+## v8: sticker (`junkbag-v8-*`)
+
+v7 as a die-cut sticker: a constant white border around the whole bag, white showing through every gap (collar gaps, pleats), a white inline just inside the bag's edge, a thicker white burger contour (25 on the burger's grid), and three gathered pleats fanning into the collar instead of the two fold shapes. The shoulder highlight is gone; the inline replaces it. The mark is the same black bag on its white sticker on every ground.
+
+Files: `junkbag-v8-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v8-board.png`.
+
+Rebuild: `python3 tools/bag_mark_v8.py logo-concepts/junk-bag`
