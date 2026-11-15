@@ -65,3 +65,14 @@ An original drawing in the style of the bag Junkbox sent as a reference (not a t
 Files: `junkbag-v6-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v6-board.png`.
 
 Rebuild: `python3 tools/bag_mark_v6.py logo-concepts/junk-bag`
+
+## v7: refined v6 (`junkbag-v7-*`)
+
+- Burger centred in the bag, both ways; its white contour is thicker (19 instead of 11 on the burger's grid); the rest of the burger is unchanged.
+- The long highlight down the side is now a short arc on the right shoulder.
+- Neater collar with clean gaps above and below.
+- The gathered top is redrawn with smooth curves and rounder tips: a tall left peak, a dip, a second peak and a shorter pointed end to the right, with two thin gather folds in place of the highlights.
+
+Files: `junkbag-v7-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v7-board.png`.
+
+Rebuild: `python3 tools/bag_mark_v7.py logo-concepts/junk-bag`
