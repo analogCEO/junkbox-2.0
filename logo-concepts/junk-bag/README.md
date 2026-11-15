@@ -57,3 +57,11 @@ The bag no longer follows the burger. It has its own traditional bin-bag silhoue
 Files: `junkbag-v5-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v5-board.png`.
 
 Rebuild: `python3 tools/bag_mark_v5.py logo-concepts/junk-bag`
+
+## v6: bag drawn to the client's reference (`junkbag-v6-*`)
+
+An original drawing in the style of the bag Junkbox sent as a reference (not a trace of it): an egg-shaped body with a flat bottom, a rounded collar at the neck, and a tall gathered top with a peak and one pointed end swept to the right. The collar gaps and the highlights (two in the top, one long one down the right side of the body) are cut out, so they show the background. The minimal burger, unchanged, sits inside at 58% size.
+
+Files: `junkbag-v6-mark.svg`, `-mark-on-amber.svg`, `-mark-on-ink.svg`, `-stacked-on-amber.svg` (primary), `-stacked-on-ink.svg`, `-stacked-on-white.svg`, `-horizontal-on-amber.svg`, `-horizontal-on-white.svg`, `-avatar.svg`; board: `junk-bag-v6-board.png`.
+
+Rebuild: `python3 tools/bag_mark_v6.py logo-concepts/junk-bag`
